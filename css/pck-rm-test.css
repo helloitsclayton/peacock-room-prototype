@@ -1,0 +1,72 @@
+#contentDiv {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin: 0 auto;
+}
+
+#mapDiv {
+	height: 50vh;
+}
+
+#tabDiv {
+	display: flex;
+	flex-direction: row;
+	padding-top: 1rem;
+}
+
+#navDiv {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	padding-right: 1rem;
+}
+
+#navDiv a {
+	margin: 0.5rem 0;
+	cursor: pointer;
+}
+
+#textDiv {
+	display: flex;
+	flex-direction: column;
+}
+
+#itinerary {
+	display: flex;
+	flex-direction: row;
+}
+
+.thumbCol {
+	display: flex;
+	flex-direction: column;
+}
+
+.thumbRow {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
+.thumbRow > div {
+	max-width: 40%;
+	min-width: 20%;
+	flex: 1 1 0;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.thumbRow h5, .thumbCol h5 {
+	padding-top: 0.3rem;
+	font-weight: bold;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 0.8rem;
+	margin-bottom: 0;
+}
+
+.thumbRow p, .thumbCol p {
+	padding-top: 0.3rem;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 0.8rem;
+	margin-bottom: 0;
+}

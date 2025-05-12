@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Peacock Room - World Tours prototype</title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""></script>
+		<link rel="stylesheet" type="text/css" href="css/pck-rm-test.css">
+	</head>
+	<body>
+		<div id="contentDiv">
+			<div id="mapDiv"></div>
+			<div id="tabDiv">
+				<nav id="navDiv">
+					<a onclick="navTabClick([0,0],-1,'overview')">Tour&nbsp;Overview</a>
+					<a onclick="navTabClick([0,0],-1,'itinerary')">Itinerary</a>
+					<a onclick="navTabClick([201.625,-299.4927779207251],2,'detroit')">Detroit</a>
+					<a onclick="navTabClick([238.125,234.37377443503215],2,'florence')">Florence</a>
+					<a onclick="navTabClick([275.875,226.62648818603242],2,'paris')">Paris</a>
+					<a onclick="navTabClick([88.625,451.2148087773511],2,'bombay')">Bombay</a>
+					<a onclick="navTabClick([205.875,694.8789830861456],2,'kyoto')">Kyoto</a>
+				</nav>
+				<div id="textDiv">
+					<div id="overview">
+						<h2>Seeking Rest and Pleasure</h2>
+						<p>Charles Lang Freer departed for his first journey to Asia in the fall of 1894, hoping to "free myself from work for a year and seek rest and pleasure in the old world." He crossed the Atlantic, lingering for a month in Italy before going to France, where he embarked from Marseilles, crossed the Mediterranean, and sailed through the Suez Canal to Ceylon (Sri Lanka). From there, he went to India, Singapore, Hong Kong, and Shanghai. He arrived in Japan in the spring of 1895, just in time for the cherry blossoms.</p>
+						<p>En route to East Asia, Freer spent several weeks in Paris with James McNeill Whistler, where they discussed "points of contact" between the painter's work and the art of Japan. (Freer had begun to acquire Japanese woodblock prints in 1892, the same year he purchased The Balcony, his first oil painting by Whistler.) Some years later, Freer recollected that Whistler told him he had come to believe ukiyo-e prints, which were widely popular among European and American collectors and consumers, were merely the "last gasp of a great tradition." He urged Freer to travel to Asia and seek out older and rarer examples of painting and pottery to harmonize with his growing collection of works by Whistler.</p>
+						<p>Freer's first trip to East Asia did not result in significant purchases of artwork. He traveled as a tourist and returned to Detroit with an idealized memory of Japan that markedly affected his development as a collector. From 1897 to 1902 his collections of East Asian and especially Japanese ceramics grew to more than 650 objects. He purchased the ceramics chiefly from the New York branch of Yamanaka and Company and from the Boston-based dealer Matsuki Bunkyo. Other significant purchases came through the Paris-based dealer Siegfried Bing or were acquired at auction from American and British collections.</p>
+					</div>
+					<div id="itinerary">
+						<div>
+							<h2>Itinerary for Freer's First Asian Tour, 1894-1895</h2>
+							<ul>
+								<li>September 1894 [departs Detroit]</li>
+								<li>New York City</li>
+								<li>Genoa [12 days]</li>
+								<li>Tours major cities in Italy [one month, following Platt's itinerary in Italian Gardens]</li>
+								<li>Paris [2 weeks]</li>
+								<li>Marseilles</li>
+								<li>Alexandria</li>
+								<li>Suez Canal to Indian Ocean</li>
+								<li>Colombo, Ceylon (Sri Lanka) [December 13]</li>
+								<li>Anuradhapura, Ceylon [December 25, 1894]</li>
+								<li>Overnight steamer across Gulf of Mannar [January 3, 1895]</li>
+								<li>India:</li>
+									<ul><li>Bombay-Ellora-north to Jodhpur-Delhi-Lahore-Peshawar-Khyber Pass-Agra-Fatehpur Sikri-Benares (Varanasi)-Calcutta-Darjeeling-Calcutta</li></ul>
+								<li>Colombo</li>
+								<li>Singapore</li>
+								<li>Hong Kong</li>
+								<li>Shanghai</li>
+								<li>Nagasaki</li>
+								<li>Kobe</li>
+								<li>Kyoto</li>
+								<li>Hozu</li>
+								<li>Nara</li>
+								<li>Uri</li>
+								<li>Nagoya</li>
+								<li>Nikko</li>
+								<li>Kyoto</li>
+								<li>Kobe</li>
+								<li>Detroit</li>
+							</ul>
+						</div>
+						<div class="thumbCol">
+							<div>
+								<a href="" title="<p class='citation'>Freer's 1894 Diary (page 1)</p>">
+									<img src="images/thumbs/CLFDiary1894_mult_thumb.jpg" alt="Freer's 1894 Diary (page 1)" />
+								</a>
+								<h5>Charles Lang Freer's Diary,</br>September, 1894 - December, 1894</h5>
+							</div>
+							<div>
+								<a href="" title="<p class='citation'>Freer's 1895 Diary (page 1)</p>">
+									<img src="images/thumbs/CLFDiary1895_mult_thumb.jpg" alt="Freer's 1895 Diary (page 1)">
+								</a>
+								<h5>Charles Lang Freer's Diary,<br>January, 1895 - September, 1895</h5>
+							</div>
+						</div>
+					</div>
+					<div id="detroit">
+						<h2>Detroit</h2>
+						<p>On September 15, 1894, Freer departed Detroit by train, and stopped briefly in New York City before setting sail on the Kaiser Wilhelm II on September 22. He returned home almost exactly a year later, on September 12, 1895.</p>
+						<div class="thumbRow">
+							<div>
+								<a href="" title="<p class='citation'>Freer house - 33 Ferry Avenue, later 71 East Ferry Street, in Detroit ca. 1906. Built 1890-91. Wilson Eyre, architect.</p>">
+									<img src="images/thumbs/FreerHouseHayes_grid_thumb.jpg" alt="Freer house - 33 Ferry Avenue, later 71 East Ferry Street, in Detroit ca. 1906. Built 1890-91. Wilson Eyre, architect.">
+								</a>
+								<h5>Freer house</h5>
+								<p>33 Ferry Avenue, later 71 East Ferry Street, in Detroit ca. 1906. Built 1890-91. Wilson Eyre, architect.</p>
+							</div>
+							<div>
+								<a href="" title="<p class='citation'>Charles Lang Freer, 1890s</p>">
+									<img src="images/thumbs/A0714_grid_thumb.jpg" alt="Charles Lang Freer, 1890s">
+								</a>
+								<h5>Charles Lang Freer, 1890s</h5>
+							</div>
+						</div>
+					</div>
+					<div id="florence">
+						<h2>Florence</h2>
+						<p>After disembarking at Genoa, Freer traveled through Italy, spending considerable time in Tuscany, where he methodically toured the villas and gardens described in a recently published book by the architect Charles Adams Platt. Freer would later commission Platt to design the Freer Gallery of Art in Washington.</p>
+						<div class="thumbRow">
+							<div>
+								<a href="" title="<p class='citation'>Gateway Boboli Gardens - From Charles Adams Platt, Italian Gardens (1894).</p>">
+									<img src="images/thumbs/Gateway_Boboli_Gardens_Charles_Platt_grid_thumb.jpg" alt="Gateway Boboli Gardens - From Charles Adams Platt, Italian Gardens (1894).">
+								</a>
+								<h5>Gateway, Boboli Gardens</h5>
+								<p>From Charles Adams Platt, <em>Italian Gardens</em> (1894)</p>
+							</div>
+							<div>
+								<a href="" title="<p class='citation'>Terrace Wall Villa Castello - From Charles Adams Platt, Italian Gardens (1894).</p>">
+									<img src="images/thumbs/Terrace_Wall_Villa_Castello_Charles_Platt_grid_thumb.jpg" alt="Terrace Wall Villa Castello - From Charles Adams Platt, Italian Gardens (1894).">
+								</a>
+								<h5>Terrace Wall, Villa Castello</h5>
+								<p>From Charles Adams Platt, <em>Italian Gardens</em> (1894)</p>
+							</div>
+							<div>
+								<a href="" title="<p class='citation'>Freer to Frank Hecker, October 17, 1894 (page 1)</p>">
+									<img src="images/thumbs/Letter_to_Hecker_Oct_17_1894_mult_thumb.jpg" alt="Freer to Frank Hecker, October 17, 1894 (page 1)">
+								</a>
+								<h5>Freer to Frank Hecker,<br>October 17, 1894</h5>
+								<p>	[excerpt of letter] <em>"What a great store house of interest this marvelous Italy!!...To fully appreciate this let one first visit the Academy then the Uffizi, next the Pitti "the Loggia dei Signori" the Bobli garden --- afterwards drive to Castello and spend the day at Villa Castello and Villa della Petraia."</em></p>
+							</div>
+						</div>
+					</div>
+					<div id="paris">
+						<h2>Paris</h2>
+						<p>Before embarking for Asia from Marseilles, Freer spent two weeks in Paris, where he visited Whistler and other America artists, including the painter Thomas Dewing and the sculptor Frederick MacMonies. Whistler had been occupied with printing a new sequence of lithographs, and Freer was pleased to purchase twenty "specially choice impressions" directly from the artist.</p>
+						<div class="thumbRow">
+							<div>
+								<a href="" title="<p class='citation'>Whistler in his studio at 86 rue Notre Dame des Champs, Paris, 1890s. Photograph by M Dormac.</p>">
+									<img src="images/thumbs/A0022_grid_thumb.jpg" alt="Whistler in his studio at 86 rue Notre Dame des Champs, Paris, 1890s. Photograph by M Dormac.">
+								</a>
+								<h5>Whistler in his studio at 86 rue Notre Dame des Champs, Paris, 1890s. Photograph by M Dormac.</h5>
+							</div>
+							<div>
+								<a href="" title="<p class='citation'>Freer to Frank Hecker, November 16, 1894 (page 1)</p>">
+									<img src="images/thumbs/Letter_to_Hecker_Nov_16_1894_grid_mult_thumb.jpg" alt="Freer to Frank Hecker, November 16, 1894 (page 1)">
+								</a>
+								<h5>Freer to Frank Hecker,<br>November 16, 1894</h5>
+								<p>[excerpt of letter] <em>"Paris is very gay, and amusing and interesting and instructive. My first visit to the Luxembourg and first sight of the treasures of the Louvre gave me peculiar sensations---in some instances like that of meeting an old and valued friend and finding him more charming than ever --- and in some cases just the opposite emotions..."</em></p>
+							</div>
+						</div>
+					</div>
+					<div id="bombay">
+						<h2>Bombay</h2>
+						<p>Although Freer had not previously expressed an interest in Indian art, his sojourn there in January of 1895 made a profound impression. "It's tremendously interesting," he wrote to his business partner, Frank Hecker, shortly before moving on to Japan, by way of Singapore and Hong Kong. His description of the social and economic situation in Bombay is tellingly paternalistic.</p>
+						<div class="thumbRow">
+							<div>
+								<a href="" title="<p class='citation'>Freer to Frank Hecker, January 27, 1895</p>">
+									<img src="images/thumbs/Letter_to_Hecker_Jan_27_1895_grid_thumb.jpg" alt="Freer to Frank Hecker, January 27, 1895">
+								</a>
+								<h5>Freer to Frank Hecker,<br>January 27, 1895</h5>
+								<p>[excerpt of letter] <em>"This mixture of stately beauty and simple happy lives, of great wealth and extreme poverty, out of which both high and low seem to extract so much contentment and so little care....The masses here although much poorer are immensely happier than in our country."</em></p>
+							</div>
+						</div>
+					</div>
+					<div id="kyoto">
+						<h2>Kyoto</h2>
+						<p>Freer's final destination was Japan, where he spent the spring and summer of 1895. His letters, several written in the Japanese fashion, with brush and ink, detail his delight in the beauty of the Japanese countryside and convey, as well, his disappointment at the encroachments of modernity in cities such as Yokohama and Tokyo. Although Freer did not purchase many works of art on this first trip to Japan, he did enjoy meeting a number of Japanese collectors, artists, and scholars.</p>
+						<div class="thumbRow">
+							<div>
+								<a href="" title="<p class='citation'>Freer with ricksha men, Kyoto, 1895</p>">
+									<img src="images/thumbs/A0712_grid_thumb.jpg" alt="Freer with ricksha men, Kyoto, 1895">
+								</a>
+								<h5>Freer with ricksha men, Kyoto, 1895</h5>
+							</div>
+							<div>
+								<a href="" title="<p class='citation'>Freer to Frank Hecker, May 27, 1895 (page 1)</p>">
+									<img src="images/thumbs/Letter_to_Hecker_May_27_1895_grid_multi_thumb.jpg" alt="Freer to Frank Hecker, May 27, 1895 (page 1)">
+								</a>
+								<h5>Freer to Frank Hecker,<br>May 27, 1895</h5>
+							</div>
+							<div>
+								<a href="" title="<p class='citation'>Freer to Frank Hecker, June 26, 1895 (page 1)</p>">
+									<img src="images/thumbs/1894_02.1_l_thumb.jpg" alt="Freer to Frank Hecker, June 26, 1895 (page 1)">
+								</a>
+								<h5>Charles Lang Freer to Frank J. Hecker, Scroll letter,<br>June 26, 1895</h5>
+								<p>[excerpt of scroll] <em>"Jinriksha travelling beats all other methods!! Think of a human horse who will haul you one mile or fifty per day --- whom you never overdrive and seldom tire, with whom you can eat, drink, smoke, and live with pleasure."</em></p>
+							</div>
+							<div>
+								<a href="" title="<p class='citation'>Freer to Frank Hecker, June 26, 1895 (page 1)</p>">
+									<img src="images/thumbs/Letter_to_Hecker_June_26_1895_grid_mult_thumb.jpg" alt="Freer to Frank Hecker, June 26, 1895 (page 1)">
+								</a>
+								<h5>Freer to Frank Hecker,<br>June 26, 1895</h5>
+								<p>[excerpt of letter] <em>"Jinriksha travelling beats all other methods!! Think of a human horse who will haul you one mile or fifty per day --- whom you never overdrive and seldom tire, with whom you can eat, drink, smoke, and live with pleasure."</em></p>
+							</div>
+							<div>
+								<a href="" title="<p class='citation'>Freer to Frank Hecker, May 27, 1895 (page 1)</p>">
+									<img src="images/thumbs/1894_03.1_l_thumb.jpg" alt="Freer to Frank Hecker, May 27, 1895 (page 1)">
+								</a>
+								<h5>Charles Lang Freer to Frank J. Hecker, Scroll letter,<br>August 4, 1894</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/pck-rm-test.js"></script>
+		<script type="text/javascript">
+			// Implements a blank base map object in mapDiv
+			var map = new L.Map("mapDiv", {
+				crs: L.CRS.Simple,
+				center: [0,0],
+				zoom: -1,
+				minZoom: -5
+			});
+
+			// Provides bounds for map image and map image itself, and adds it to map object
+			var bounds = [[-608.176856905,-1000],[608.176856905,1000]];
+			var image = L.imageOverlay('images/maps/grays1879_live.jpg',bounds).addTo(map);
+
+			// Creates flag icon, adds features in firstTour to map with flag icon as marker, and adds onEachFeature function to each feature
+			var flagIcon = L.icon({
+				iconUrl: "images/icons/flag_grays.png",
+				iconSize: [38,35],
+				iconAnchor: [19,35]
+			});
+			L.geoJSON(firstTour,{
+				pointToLayer: function(feature,latlng) {
+					label = String(feature.properties.name)
+					return new L.marker(latlng,{icon: flagIcon}).bindTooltip(label, {direction: "center", permanent: true, opacity: 0.8}).openTooltip();
+				},
+				onEachFeature: onEachFeature
+			}).addTo(map);
+
+			// Adds mapMarkerClick function as a click event to each feature in the geoJSON 
+			function onEachFeature(feature,layer) {
+				layer.on({
+					click: mapMarkerClick
+				});
+			}
+
+			// List of tabs on page used in mapMarkerClick, navTabClick, and onload function
+			var tabList = ["overview","itinerary","detroit","florence","paris","bombay","kyoto"];
+
+			// flyTo clicked marker, open tab associated with clicked marker
+			function mapMarkerClick(e) {
+				for (var i = tabList.length - 1; i >= 0; i--) {
+					document.getElementById(tabList[i]).setAttribute('style','visibility:collapse;');
+				}
+				var coordsArray = e.target.feature.geometry.coordinates; // Necessary because GeoJSON and leaflet don't agree on lat/long order :\
+				map.flyTo([coordsArray[1],coordsArray[0]],2,{duration:2,easeLinearity:1});
+				document.getElementById(e.target.feature.properties.id).setAttribute('style','visibility:visible;');
+			}
+
+			// flyTo marker associated clicked tab, opens clicked tab, hides other tabs
+			function navTabClick(l,z,tabOpen) {
+				for (var i = tabList.length - 1; i >= 0; i--) {
+					document.getElementById(tabList[i]).setAttribute('style','visibility:collapse;');
+				}
+				map.flyTo(l,z,{duration:2,easeLinearity:1});
+				document.getElementById(tabOpen).setAttribute('style','visibility:visible;');
+			}
+
+			// Sets visibility:collapse for all but first tab content
+			window.onload = (event) => {
+				for (var i = tabList.length - 1; i >= 1; i--) {
+					document.getElementById(tabList[i]).setAttribute('style','visibility:collapse;');
+				}
+			};
+		</script>
+	</body>
+</html>
